@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lic. Marianela Esquivel – Contacto</title>
+  <style>
+    :root{
+      --primary:#3f51b5; /* Azul tipo material */
+      --primary-dark:#2e3b8f;
+      --text:#1f2937;
+      --muted:#6b7280;
+      --bg:#f5f7fb;
+      --card:#ffffff;
+      --accent:#ff3e7f; /* Botón descargar */
+      --accent-dark:#e02e6c;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Helvetica Neue',Arial; background:var(--bg); color:var(--text);
+      display:flex; min-height:100vh; align-items:center; justify-content:center; padding:24px;
+    }
+    .card{
+      width:min(760px,100%); background:var(--card); border-radius:14px; box-shadow:0 10px 30px rgba(0,0,0,.08);
+      overflow:hidden; border:1px solid #e5e7eb;
+    }
+    .hero{background:var(--primary); padding:28px 24px 0; position:relative;}
+    .hero-inner{display:flex; flex-direction:column; align-items:center; gap:14px; padding-bottom:18px;}
+    .avatar{width:88px; height:88px; border-radius:50%; overflow:hidden; border:3px solid rgba(255,255,255,.9); box-shadow:0 4px 10px rgba(0,0,0,.15); background:#fff;}
+    .avatar img{width:100%; height:100%; object-fit:cover; display:block;}
+    .name{color:#fff; font-weight:700; font-size:1.35rem; text-align:center;}
+
+    .tabs{display:grid; grid-template-columns:1fr 1fr; border-top:1px solid rgba(255,255,255,.25);}
+    .tab{
+      display:flex; gap:10px; align-items:center; justify-content:center; color:#fff; text-decoration:none; padding:14px 10px; font-weight:600; letter-spacing:.3px;
+      transition:background .2s ease;
+    }
+    .tab:hover{background:var(--primary-dark)}
+    .tab svg{width:18px; height:18px; fill:#fff}
+
+    .content{padding:28px 24px;}
+    .list{display:flex; flex-direction:column; gap:18px;}
+    .item{display:grid; grid-template-columns:28px 1fr; align-items:flex-start; gap:10px;}
+    .item svg{width:20px; height:20px; fill:var(--muted)}
+    .item .label{font-size:.78rem; color:var(--muted); margin-top:4px}
+    .item .value{font-weight:600}
+    .item .value a{color:inherit; text-decoration:none}
+    .item .value a:hover{text-decoration:underline}
+
+    .cta{margin-top:26px; display:flex; justify-content:center}
+    .btn{
+      appearance:none; border:0; cursor:pointer; border-radius:10px; padding:14px 20px; font-weight:700; letter-spacing:.3px; color:#fff; background:var(--accent);
+      box-shadow:0 6px 18px rgba(255,62,127,.35); transition:transform .06s ease, background .2s ease, box-shadow .2s ease;
+    }
+    .btn:hover{background:var(--accent-dark); box-shadow:0 10px 22px rgba(255,62,127,.45)}
+    .btn:active{transform:translateY(1px)}
+
+    @media (max-width:520px){
+      .name{font-size:1.1rem}
+      .item{grid-template-columns:24px 1fr}
+    }
+  </style>
+</head>
+<body>
+  <article class="card" role="region" aria-label="Tarjeta de contacto">
+    <header class="hero">
+      <div class="hero-inner">
+        <!-- Reemplaza src por la ruta de la foto que nos enviarás -->
+        <div class="avatar"><img src="photo.jpg" alt="Foto de perfil de Lic. Marianela Esquivel" /></div>
+        <div class="name">Lic. Marianela Esquivel S.</div>
+      </div>
+      <nav class="tabs" aria-label="Acciones rápidas">
+        <a class="tab" id="callBtn" href="tel:+50660668322">
+          <!-- phone icon -->
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79a15.09 15.09 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.56.57 1 1 0 011 1v3.61a1 1 0 01-.91 1 18 18 0 01-7.86-2.74 17.62 17.62 0 01-5.49-5.49A18 18 0 013 4.93a1 1 0 011-1H7.6a1 1 0 011 1 11.36 11.36 0 00.57 3.56 1 1 0 01-.24 1.01l-2.3 2.29z"/></svg>
+          CALL
+        </a>
+        <a class="tab" id="emailBtn" href="mailto:mesquivels@gmail.com?subject=Consulta%20legal">
+          <!-- email icon -->
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          EMAIL
+        </a>
+      </nav>
+    </header>
+
+    <section class="content">
+      <div class="list">
+        <div class="item">
+          <!-- briefcase icon -->
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 4h4a2 2 0 012 2v2h4a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V10a2 2 0 012-2h4V6a2 2 0 012-2zm0 4h4V6h-4v2z"/></svg>
+          <div>
+            <div class="value">Abogada y Notario</div>
+          </div>
+        </div>
+
+        <div class="item">
+          <!-- phone icon -->
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79a15.09 15.09 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.56.57 1 1 0 011 1v3.61a1 1 0 01-.91 1 18 18 0 01-7.86-2.74 17.62 17.62 0 01-5.49-5.49A18 18 0 013 4.93a1 1 0 011-1H7.6a1 1 0 011 1 11.36 11.36 0 00.57 3.56 1 1 0 01-.24 1.01l-2.3 2.29z"/></svg>
+          <div>
+            <div class="value"><a href="tel:+50660668322">60668322</a></div>
+            <div class="label">Mobile</div>
+          </div>
+        </div>
+
+        <div class="item">
+          <!-- email icon -->
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          <div>
+            <div class="value"><a href="mailto:mesquivels@gmail.com">mesquivels@gmail.com</a></div>
+            <div class="label">Email</div>
+          </div>
+        </div>
+
+        <div class="item">
+          <!-- globe icon -->
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1010 10A10 10 0 0012 2zm1 17.93A8 8 0 1112 4v.07C9.16 4.56 7 7.03 7 10c0 3.31 2.69 6 6 6 .72 0 1.41-.13 2.05-.36A7.95 7.95 0 0113 19.93z"/></svg>
+          <div>
+            <div class="value"><a href="https://wa.me/50660668322" target="_blank" rel="noopener">https://wa.me/50660668322</a></div>
+            <div class="label">Website</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cta">
+        <button class="btn" id="vcardBtn" type="button">+ DESCARGAR VCARD</button>
+      </div>
+    </section>
+  </article>
+
+  <script>
+    // 👉 Edita estos datos (o déjalos y funcionará)
+    const CONTACT = {
+      honorific: 'Lic.',
+      firstName: 'Marianela',
+      lastName: 'Esquivel',
+      suffix: 'S.',
+      title: 'Abogada y Notario',
+      phone: '+50660668322',
+      email: 'mesquivels@gmail.com',
+      address: 'Boulevard de Rohrmoser, San José, Costa Rica',
+      url: 'https://wa.me/50660668322'
+    };
+
+    // vCard 3.0 generator (single file, no libs)
+    function buildVCard(c){
+      const esc = s => String(s||'').replace(/\n/g,'\\n');
+      return [
+        'BEGIN:VCARD',
+        'VERSION:3.0',
+        `N:${esc(c.lastName)};${esc(c.firstName)};;${esc(c.honorific)};${esc(c.suffix)}`,
+        `FN:${esc(`${c.honorific} ${c.firstName} ${c.lastName} ${c.suffix}`.trim())}`,
+        `TITLE:${esc(c.title)}`,
+        `TEL;TYPE=CELL:${esc(c.phone)}`,
+        `EMAIL:${esc(c.email)}`,
+        `ADR;TYPE=WORK:;;${esc(c.address)};;;;`,
+        `URL:${esc(c.url)}`,
+        'END:VCARD'
+      ].join('\n');
+    }
+
+    document.getElementById('vcardBtn').addEventListener('click', () => {
+      const vcf = buildVCard(CONTACT);
+      const blob = new Blob([vcf], { type: 'text/vcard;charset=utf-8' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url; a.download = `${CONTACT.firstName}${CONTACT.lastName}.vcf`;
+      document.body.appendChild(a); a.click(); a.remove();
+      setTimeout(() => URL.revokeObjectURL(url), 1000);
+    });
+  </script>
+</body>
+</html>
